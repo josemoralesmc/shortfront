@@ -1,4 +1,5 @@
 import { Disclosure } from "@headlessui/react";
+import React from 'react'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PaperClipIcon } from "@heroicons/react/20/solid";
 import "./output.css";
