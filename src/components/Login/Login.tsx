@@ -37,11 +37,10 @@ const Login = () => {
       });
 
       const data = await response.json(); 
-      console.log(data.token, data);
       
       
       if (data.success == true) {
-        Cookies.set("Token", data.token)
+        Cookies.set("Token", data.data)
         navigate('/create')
       } else {
         setError('Wrong email or password');
