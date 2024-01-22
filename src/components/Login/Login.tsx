@@ -1,6 +1,7 @@
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import  Cookies  from "js-cookie";
 
 
 const Login = () => {
@@ -36,9 +37,9 @@ const Login = () => {
       });
 
       const data = await response.json();
-      console.log(data);
       
       if (data.success == true) {
+        Cookies.set("Token", data.token)
         navigate('/create')
       } else {
         setError('Wrong email or password');
