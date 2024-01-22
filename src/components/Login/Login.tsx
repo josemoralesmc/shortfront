@@ -37,6 +37,7 @@ const Login = () => {
       });
 
       const data = await response.json(); 
+      console.log(data.data, data, data.success);
       
       
       if (data.success == true) {
