@@ -36,7 +36,9 @@ const Login = () => {
         body: JSON.stringify(user),
       });
 
-      const data = await response.json();
+      const data = await response.json(); 
+      console.log(data.token, data);
+      
       
       if (data.success == true) {
         Cookies.set("Token", data.token)
