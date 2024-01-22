@@ -1,4 +1,4 @@
-import React from 'react'
+
 import NavBar from "../NavBar/NavBar";
 import { useState } from "react";
 import Cookies from "js-cookie";

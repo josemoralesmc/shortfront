@@ -1,4 +1,3 @@
-import React from 'react'
 import { PaperClipIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 

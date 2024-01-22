@@ -1,5 +1,4 @@
 import NavBar from "../NavBar/NavBar";
-import React from 'react'
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import UrlDetail from "../UrlDetail/UrlDetail";
