@@ -42,7 +42,8 @@ const Login = () => {
       
       if (data.success == true) {
         Cookies.set("Token", data.data)
-        window.location.reload()
+        console.log(document.cookie);
+        
         navigate('/create')
       } else {
         setError('Wrong email or password');

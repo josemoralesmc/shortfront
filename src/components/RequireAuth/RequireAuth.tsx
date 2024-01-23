@@ -1,9 +1,8 @@
 import { Navigate, Outlet } from "react-router-dom";
-interface RequireAuthProps {
-    Token: string | undefined;
-  }
-  
- const RequireAuth: React.FC<RequireAuthProps> = ({Token}) => {
+import Cookies from "js-cookie";
+
+ const RequireAuth: React.FC = () => {
+  const Token = Cookies.get("Token")
 
   if (!Token) {
     return <Navigate to={'/'}/>;
